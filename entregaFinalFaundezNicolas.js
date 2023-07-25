@@ -1,18 +1,21 @@
 
-        const verdurasUrl = "../verduras.json";
+        const verdurasUrl = "./verduras.json";
         let productos = [];
 
         fetch(verdurasUrl)
             .then(response => response.json())
             .then(data => {
-                productos = data.productos;
-                crearTarjetas(productos);
-                mostrarCarrito();
-            })
+                productos = data.productos;      
+
+            }) 
             .catch(mensajeError => alert("Error al cargar productos"));
+
 
         let tarjetas = document.getElementById("tarjetas");
         let carrito = [];
+
+            crearTarjetas(productos);
+            mostrarCarrito();
 
         // Obtener datos del carrito desde el Local Storage (si existen)
         const carritoJSON = localStorage.getItem("carrito");
