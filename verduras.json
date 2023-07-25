@@ -1,0 +1,43 @@
+[{
+    "id": 1,
+    "producto": "manzana",
+    "precio": 150,
+    "origen": "nacional",
+    "Imagen": "manzana.jpeg"
+},
+{
+    "id": 2,
+    "producto": "naranja",
+    "precio": 100,
+    "origen": "nacional",
+    "Imagen": "naranja.jpeg"
+},
+{
+    "id": 3,
+    "producto": "banana",
+    "precio": 200,
+    "origen": "importado",
+    "Imagen": "banana.jpeg"
+},
+{
+    "id": 4,
+    "producto": "peras",
+    "precio": 80,
+    "origen": "nacional",
+    "Imagen": "pera.jpeg"
+},
+{
+    "id": 5,
+    "producto": "frutillas",
+    "precio": 350,
+    "origen": "importado",
+    "Imagen": "frutilla.jpeg"
+},
+{
+    "id": 6,
+    "producto": "tomates",
+    "precio": 85,
+    "origen": "nacional",
+    "Imagen": "tomate.jpeg"
+}
+]
