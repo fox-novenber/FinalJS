@@ -2,11 +2,15 @@
 padding: 0;
 margin: 0;
 }
-
+body{
+    background-image: url(./imagenes/superMercado.jpg);
+    opacity: .9;
+}
 h1{
     display: flex;
     justify-content: center;
     padding: 15px;
+    color: green;
 }
 
 .cajaBuscador {
@@ -38,7 +42,7 @@ h1{
 
 h3{
     float:right;
-    color: blue;
+    color: black;
 }
 
 #botonBuscar {
@@ -51,5 +55,25 @@ h3{
     margin-left: 5px;
     margin: 2 px;}
 .compras{
-    background-color: aquamarine;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),url(./imagenes/tienda-carrito.png);
+}
+
+aside{
+    float: left;
+    width: 25%;
+    position: relative;
+}
+#restarCantidad{
+    border-radius: 43%;
+    background-color: crimson; 
+    padding: 6px;
+    border: 2px solid red;
+    font-size: 15px;
+}
+#sumarCantidad{
+    border-radius: 43%;
+    background-color: rgba(197, 186, 26, 0.801); 
+    padding: 6px;
+    border: 2px solid rgb(232, 248, 12);
+    font-size: 15px;
 }

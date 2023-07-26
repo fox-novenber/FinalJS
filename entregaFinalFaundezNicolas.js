@@ -5,7 +5,7 @@
         fetch(verdurasUrl)
             .then(response => response.json())
             .then(data => {
-                productos = data.productos;      
+                productos = data;      
 
             }) 
             .catch(mensajeError => alert("Error al cargar productos"));
@@ -50,7 +50,7 @@
                     <h3>${item.producto}</h3>
                     <p>Precio: ${item.precio}$</p>
                     <p>Cantidad: ${item.cantidad}</p>
-                    <button class="fachaBotones" id="restarCantidad" data-item-id="${item.id}">-</button>
+                    <button class="fachaBotones" id="restarCantidad" onclick="restarCantidad (${item.id})">-</button>
                     <button class="fachaBotones" id="sumarCantidad"  onclick="sumarCantidad(${item.id})">+</button>
                     <button class="fachaBotones" id="eliminarItem" onclick="eliminarItem(${item.id})">Eliminar</button>
                 `;
@@ -88,7 +88,6 @@
                     eliminarItem(id);
                 }
             }
-
             Toastify({
                 text: "Se ha restado un item del carrito.",
                 duration: 3000,
